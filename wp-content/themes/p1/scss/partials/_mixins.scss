@@ -1,0 +1,155 @@
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin filter($a){
+  -webkit-filter: $a; /* Safari 6.0 - 9.0 */
+  filter: $a;
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+@mixin opacity-transition($a:0.8,$b: all 0.5s ease){
+  opacity: $a;
+  transition: $b;
+}
+@mixin cp($mw: 800px, $m:0 auto){
+  max-width: $mw;
+  margin:$m;
+}
+@mixin hcss($ls: 5px){
+  letter-spacing: $ls;
+}
+@mixin reset-ul{
+  padding-left:0;
+  margin-bottom: 0;
+}
+@mixin lsn-dib{
+  list-style: none;
+  display: inline-block;
+}
+@mixin tdn{
+  text-decoration: none;
+}
+@mixin ttu{
+  text-transform: uppercase;
+}
+@mixin orb{
+  font-family: $ff1;
+  font-weight: 700;
+  @include ttu;
+}
+@mixin btn($color: $c1, $background-color: transparent, $border-color: $c1, $border-size: 3px, $box-shadow: none, $animation: none, $font-size: 21px){
+  border:$border-size solid $border-color;
+  color:$color;
+  background-color:$background-color;
+  font-size:$font-size;
+  @include bs($box-shadow);
+  animation: $animation;
+
+  font-family: $ff2;
+  font-weight: 900;
+  @include ttu;
+  max-width: 305px;
+  width: 100%;
+  border-radius: 30px;
+  line-height: 21px;
+  transition: all 0.8s ease;
+}
+@mixin bs($shadows...){ //box-shadow
+  box-shadow: $shadows;
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+}
+@mixin bgatts($reap: no-repeat, $bsize: cover, $bpos: center center,$background-attachment: unset){
+  background-repeat: $reap;
+  background-size: $bsize;
+  background-position: $bpos;
+  background-attachment: $background-attachment;
+}
+
+@mixin animation($anime){
+  -webkit-animation: $anime; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: $anime; /* Firefox < 16 */
+        -ms-animation: $anime; /* Internet Explorer */
+         -o-animation: $anime; /* Opera < 12.1 */
+            animation: $anime;
+}
+
+@mixin max-1793-min-992{
+  @media only screen and (max-width:1793px) and (min-width:992px){
+    @content;
+  }
+}
+
+@mixin min-1200{
+  @media only screen and (min-width: 1200px){
+    @content;
+  }
+}
+
+@mixin min-992{
+  @media(min-width:992px){
+    @content;
+  }
+}
+
+@mixin max-991{
+  @media only screen and (max-width:991px){
+    @content;
+  }
+}
+
+
+@mixin max-830{
+  @media only screen and (max-width: 830px){
+    @content;
+  }
+}
+
+@mixin max-767(){
+  @media only screen and (max-width:767px){
+    @content;
+  }
+}
+
+@mixin min-600(){
+  @media only screen and (min-width:600px){
+    @content;
+  }
+}
+
+@mixin max-575{
+  @media only screen and (max-width: 575px){
+    @content;
+  }
+}
+
+@mixin max-340{
+  @media only screen and (max-width: 340px){
+    @content;
+  }
+}
+
+@mixin max-h-545{
+  @media only screen and (max-height: 545px){
+    @content;
+  }
+}
