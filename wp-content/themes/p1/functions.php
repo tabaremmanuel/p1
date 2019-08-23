@@ -1,7 +1,7 @@
 <?php
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
-    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Orbitron:400,700|Roboto:300,400,700,900&display=swap' );
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Audiowide|Roboto:300,400,700,900&display=swap' );
     wp_enqueue_style( 'font-awesome', '//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'bootstrap-style', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');

@@ -59,7 +59,7 @@ a{outline: none;}
   padding:18px;
 
   &:hover{
-    @include btn($background-color: $c1, $box-shadow: $btn-bs, $color: $c4, $animation: none);
+    @include btn($background-color: $regular-blue, $box-shadow: $btn-bs, $color: $white, $animation: none);
   }
 
   @include max-575{
@@ -86,12 +86,12 @@ h2::before{
 }
 
 .top-phone{
-  color:$c1_2;
+  color:$regular-blue;
 
   @include orb;
 
   &:hover{
-    color:$c1_2;
+    color:$regular-blue;
     @include tdn;
 
     @include opacity-transition;
@@ -101,7 +101,7 @@ h2::before{
     }
   }
 
-  span{color:$c1_3}
+  span{color:$dark-blue}
 }
 
 .top-banner{
@@ -134,7 +134,7 @@ h2::before{
 
       button{
         height: 7px;
-        background-color: $c8;
+        background-color: $gray;
         padding: 0;
         display: inline-block;
         width: 47px;
@@ -145,7 +145,7 @@ h2::before{
         outline:none;
 
         &.glide__bullet--active{
-          background-color:$c1;
+          background-color:$regular-blue;
         }
       }
     }
@@ -159,7 +159,7 @@ h2::before{
     bottom: 0;
     width: 100%;
     text-align: center;
-    color:$c1_1;
+    color:$light-blue;
     padding-bottom: 70px;
     background: url(../images/arrow-down.png) center 60% no-repeat;
     transition: all 0.4s ease;
@@ -187,7 +187,7 @@ h2::before{
 
       p,
       h2{
-        color:$c4;
+        color:$white;
       }
 
       h2{
@@ -223,7 +223,7 @@ h2::before{
   h3{
     @include orb;
     @include hcss($ls: 1px);
-    color:$c4;
+    color:$white;
 
     // @media only screen and (min-width: 1200px){
     @include min-1200{
@@ -246,7 +246,7 @@ h2::before{
 }
 
 #section-3{
-  background-color: $c6;
+  background-color: $white;
 
   .container>.row{
     min-height: 100vh;
@@ -255,14 +255,14 @@ h2::before{
   h3{
     @include orb;
     @include hcss($ls: 2px);
-    color:$c1_2;
+    color:$regular-blue;
 
     @include min-1200{
       font-size: 55px;
     }
 
     span{
-      color:$c3;
+      color:$dark-blue;
 
       @include min-992{
         display: block
@@ -272,18 +272,18 @@ h2::before{
   }
 
   p{
-    color:$c3_1;
+    color:$dark-blue;
   }
 
   .glide{
 
     .glide__bullets{
       .glide__bullet--active{
-        background-color: $c1
+        background-color: $regular-blue
       }
 
       button{
-        background-color: $c5;
+        background-color: $gray;
         outline: none;
         height:7px;
         width:47px;
@@ -314,11 +314,11 @@ h2::before{
 
           h4{
             @include orb;
-            color:$c4
+            color:$white
           }
 
           p{
-            color:$c4;
+            color:$white;
             font-weight: 300;
           }
 
@@ -326,7 +326,7 @@ h2::before{
             @include btn($border-size: 2px, $font-size: 18px);
 
             &:hover{
-              @include btn($background-color: $c1, $color: $c4, $font-size: 18px, $border-size: 2px, $box-shadow: $btn-bs)
+              @include btn($background-color: $regular-blue, $color: $white, $font-size: 18px, $border-size: 2px, $box-shadow: $btn-bs)
             }
           }
 
@@ -352,7 +352,7 @@ h2::before{
 
 #section-4{
 
-  background-color: $c3;
+  background-color: $dark-blue;
 
   .container>.row{min-height: 100vh;}
 
@@ -372,13 +372,13 @@ h2::before{
   }
 
   p{
-    color:$c4;
+    color:$white;
     font-weight: 300;
   }
 
   h4{
     @include orb;
-    color:$c3;
+    color:$dark-blue;
     @include hcss($ls: 2px);
 
     @include min-992{
@@ -389,7 +389,7 @@ h2::before{
   h3{
     @include orb;
     @include hcss($ls: 3px);
-    color:$c1_2;
+    color:$regular-blue;
 
     @media only screen and (min-width: 1350px){
       font-size: 60px;
@@ -406,7 +406,7 @@ h2::before{
     }
 
     span{
-      color:$c4;
+      color:$white;
 
       @include min-1200{
         display: block;
@@ -415,10 +415,10 @@ h2::before{
   }
 
   .side-desc{
-    background-color: $c4;
+    background-color: $white;
 
     p{
-      color:$c3;
+      color:$dark-blue;
       line-height: normal;
     }
   }
@@ -426,7 +426,7 @@ h2::before{
     @include btn($border-size: 2px, $font-size: 18px);
 
     &:hover{
-      @include btn($background-color: $c1, $color: $c4, $font-size: 18px, $border-size: 2px, $box-shadow: $btn-bs)
+      @include btn($background-color: $regular-blue, $color: $white, $font-size: 18px, $border-size: 2px, $box-shadow: $btn-bs)
     }
   }
 
@@ -442,7 +442,7 @@ h2::before{
   h3{
     @include orb;
     @include hcss($ls: 3px);
-    color:$c1_2;
+    color:$regular-blue;
 
     @include min-1200{
       font-size: 60px;
@@ -453,7 +453,7 @@ h2::before{
     }
 
     span{
-      color:$c3
+      color:$dark-blue
     }
   }
 
@@ -599,12 +599,12 @@ h2::before{
 
       a{
         @include orb;
-        color:$c3;
+        color:$dark-blue;
         font-size: 30px;
         transition: all 0.2s ease;
 
         &:hover{
-          color:$c1;
+          color:$regular-blue;
           text-decoration: none;
         }
 
@@ -648,7 +648,7 @@ h2::before{
 
   .copyright p{
     font-size: 18px;
-    color:$c7;
+    color:$gray;
     font-weight: 600;
   }
 }
@@ -683,16 +683,16 @@ h2::before{
 
 
 .glide__arrow--left {
-    border-top: 1px solid $c4;
-	  border-left: 1px solid $c4;
+    border-top: 1px solid $white;
+	  border-left: 1px solid $white;
     // transform: rotate(-54deg) skew(-20deg);
     transform: rotate(-48deg) skew(-5deg);
     left: -40px;
 }
 
 .glide__arrow--right {
-  	border-top: 1px solid $c4;
-	  border-right: 1px solid $c4;
+  	border-top: 1px solid $white;
+	  border-right: 1px solid $white;
     transform: rotate(48deg) skew(5deg);
     right: -40px;
 }
@@ -725,7 +725,7 @@ h2::before{
     position: absolute;
     top:0;
     z-index: 1;
-    background-color: $c4;
+    background-color: $white;
     width: 100%;
   }
 }

@@ -17,10 +17,10 @@
 
       .sec5-content{
         display:block!important;
-        background-color: $c4;
+        background-color: $white;
 
         h4{
-          color:$c1_2;
+          color:$regular-blue;
           @include orb;
           letter-spacing: 2px;
 
@@ -29,11 +29,11 @@
           }
 
           span{
-            color:$c4;
+            color:$white;
           }
         }
         p{
-          color:$c4;
+          color:$white;
         }
 
         .ladom-sc5-header{
@@ -77,13 +77,13 @@
             textarea{
               background-color: transparent;
               border:0;
-              border-bottom: 2px solid $c9;
+              border-bottom: 2px solid $gray;
               outline:none;
               width: 100%;
               padding:0 0 25px!important;
 
               @include placeholder {
-                color: $c9;
+                color: $gray;
               }
             }
           }
@@ -99,7 +99,7 @@
           @include btn;
 
           &:hover{
-            @include btn($background-color: $c1, $box-shadow: $btn-bs, $color: $c4, $animation: none);
+            @include btn($background-color: $regular-blue, $box-shadow: $btn-bs, $color: $white, $animation: none);
           }
         }
       }
@@ -136,7 +136,7 @@
         top:15px;
         right:15px;
         z-index: 1;
-        color:$c4;
+        color:$white;
       }
 
       max-width: 1367px;
@@ -149,11 +149,11 @@
         // height:384px;
         height:25vh;
         width: 100%;
-        background-color: $c4;
+        background-color: $white;
         position: relative;
         margin:0 auto;
         display: block;
-        border-bottom: 4px solid $c1_2;
+        border-bottom: 4px solid $regular-blue;
 
         @include bgatts($bpos: center 15%);
       }
@@ -164,7 +164,7 @@
         height:60vh;
         overflow-y: scroll;
         width: 100%;
-        background-color: $c4;
+        background-color: $white;
         position: relative;
         margin:0 auto;
         display: block;
@@ -175,16 +175,16 @@
         }
 
         &.sec4{
-          background-color: $c3;
+          background-color: $dark-blue;
 
           p,
           h4{
-            color:$c4;
+            color:$white;
           }
         }
 
         p{
-          color:$c3;
+          color:$dark-blue;
         }
 
         h4{
@@ -193,7 +193,7 @@
           text-align: center;
           padding-top: 55px;
           margin: 0 auto;
-          color:$c3;
+          color:$dark-blue;
           @include orb;
 
           @include min-1200{
@@ -204,7 +204,7 @@
 
         h5{
           font-weight: 300;
-          color:$c3;
+          color:$dark-blue;
           text-align: center;
           margin-bottom: 20px;
 
